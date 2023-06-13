@@ -1,24 +1,27 @@
+
 /********** Root CSS **********/
 
 body {
   font-family: 'EB Garamond', serif;
+  font-weight: 500;
+  font-size: 16px;
 }
 
 /* Animation Background */
 
 /* Navbar and footer Gradient Color */
 .gradient-custom {
-  /* fallback for old browsers */
-  background: #1e7406;
+    /* fallback for old browsers */
+    background: #007f5f;
   
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-linear-gradient(to left, rgba(30, 116, 6, 0.65), rgba(174,164,45,0.65));
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to left, rgba(0,127,95,1), rgba(191,210,0,1));
   
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background: linear-gradient(to left, rgba(30,116,6,0.65), rgba(174,164,45,0.65));
-}
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to left, rgba(0,127,95,1), rgba(191,210,0,1))
+  }
 
-/** Navigation **/
+/* Navigation */
 
 .navbar-brand span {
   font-size: 1.25rem;
@@ -36,7 +39,6 @@ body {
 
 .navbar-brand img {
   height: 64px;
-  float: left;
   margin-right: 2px;
 }
 
@@ -45,12 +47,12 @@ body {
 }
 
 #nav-list a {
-  color: #F6B319;
+  color: #fff;
   text-align: center;
 }
 
 #nav-list a:hover {
-  color: #348E38;
+  color: yellow;
 }
 
 #logo {
@@ -71,9 +73,10 @@ body {
 
 .navbar-toggler:focus {
   box-shadow: 0 0 0 0;
-  color: #348E38;
-  border-color: #348E38;
+  outline: none;
+  border-color: transparent;
 }
+
 
 /* Header */
 
@@ -154,20 +157,35 @@ section#contact {
   color: #F6B319;
 }
 
-.footer a.designer-link {
-  color: #F6B319;
-  transition: color 0.3s;
+
+/* Footer */
+
+footer.footer {
+  color: #fff;
 }
 
-.footer a.designer-link:hover {
-  color: #348E38;
+footer.footer .text-color,
+footer.footer .designer-link {
+  color: #fff;
 }
 
-.footer a.btn-social i {
-  color: #F6B319;
-  transition: color 0.3s;
+footer.footer a {
+  color: #fff;
 }
 
-.footer a.btn-social:hover i {
-  color: #348E38;
+footer.footer a:hover {
+  color: yellow;
+}
+
+footer.footer .designer-link:hover {
+  color: #000;
+}
+
+/*Tests Items*/
+.likert-item {
+  margin-bottom: 20px;
+}
+
+.likert-scale label {
+  margin-right: 10px;
 }
