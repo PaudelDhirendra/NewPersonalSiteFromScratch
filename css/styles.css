@@ -90,6 +90,14 @@ header.slogan {
   color: #fff;
   height: 100vh;
 }
+header.slogan h1.display-5 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+header.slogan p {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
 
 /* Page Section */
 
@@ -110,29 +118,12 @@ section#about {
 }
 
 section#portfolio {
-  color: #F6B319;
+  color: #FFF;
 }
 
-#portfolio a {
-  color: #F6B319;
-  text-decoration: none;
-}
-
-#portfolio a:hover {
-  color: #348E38;
-}
 
 section#services {
   color: #348E38;
-}
-
-.service-link {
-  color: #348E38;
-  text-decoration: none;
-}
-
-.service-link:hover {
-  color: #F6B319;
 }
 
 section#contact {
@@ -140,20 +131,16 @@ section#contact {
   background-image: url("../assets/img/map-image.png");
   background-repeat: no-repeat;
   background-position: center;
-  color: #F6B319;
+  color: #FFF;
 }
 
 .contact-link {
-  color: #F6B319;
+  color: #FFF;
   transition: color 0.3s;
 }
 
 .contact-link:hover {
   color: #348E38;
-}
-
-.footer .text-color {
-  color: #F6B319;
 }
 
 
@@ -178,13 +165,4 @@ footer.footer a:hover {
 
 footer.footer .designer-link:hover {
   color: #000;
-}
-
-/*Tests Items*/
-.likert-item {
-  margin-bottom: 20px;
-}
-
-.likert-scale label {
-  margin-right: 10px;
 }

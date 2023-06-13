@@ -7,7 +7,7 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <!-- Favicon -->
-  <link href="assets/favicon.ico" rel="icon">
+  <link href="../assets/favicon.ico" rel="icon">
 
   <!-- Google Web Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -45,25 +45,22 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse text-center justify-content-end" id="navbarSupportedContent">
-      <ul id="nav-list" class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="#about" aria-label="About">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#portfolio" aria-label="Portfolio">Portfolio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#services" aria-label="Services">Services</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#" aria-label="Courses">Courses</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#" aria-label="Tests">Tests</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact" aria-label="Contact">Contact</a>
-        </li>
+          <ul id="nav-list" class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html" aria-label="Home">Home</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#courses" aria-label="Courses">Courses</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#tests" aria-label="Tests">Tests</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#skills" aria-label="Resources">Skills</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="index.html#contact" aria-label="Contact">Contact</a>
+          </li>
       </ul>
     </div>
   </div>
@@ -76,82 +73,74 @@
         <h2 class="mt-0">Test</h2>
         <hr class="divider divider-dark">
         <h2>GAD-7</h2>
-        <form id="likertForm">
-          <div class="likert-item">
-            <p>Feeling nervous, anxious, or on edge</p>
-            <div class="likert-scale">
-              <label><input type="radio" name="q1" value="0"> Not at all</label>
-              <label><input type="radio" name="q1" value="1"> Several days</label>
-              <label><input type="radio" name="q1" value="2"> More than half the days</label>
-              <label><input type="radio" name="q1" value="3"> Nearly every day</label>
-            </div>
-          </div>
+        <form id="gadForm">
+    <h3>Over the past 2 weeks, how often have you been bothered by any of the following problems?</h3>
+    
+    <p>
+      1. Feeling nervous, anxious, or on edge.<br>
+      <label><input type="radio" name="q1" value="0"> Not at all</label><br>
+      <label><input type="radio" name="q1" value="1"> Several days</label><br>
+      <label><input type="radio" name="q1" value="2"> More than half the days</label><br>
+      <label><input type="radio" name="q1" value="3"> Nearly every day</label>
+    </p>
+    
+    <p>
+      2. Not being able to stop or control worrying.<br>
+      <label><input type="radio" name="q2" value="0"> Not at all</label><br>
+      <label><input type="radio" name="q2" value="1"> Several days</label><br>
+      <label><input type="radio" name="q2" value="2"> More than half the days</label><br>
+      <label><input type="radio" name="q2" value="3"> Nearly every day</label>
+    </p>
+    
+    <p>
+      3. Worrying too much about different things.<br>
+      <label><input type="radio" name="q3" value="0"> Not at all</label><br>
+      <label><input type="radio" name="q3" value="1"> Several days</label><br>
+      <label><input type="radio" name="q3" value="2"> More than half the days</label><br>
+      <label><input type="radio" name="q3" value="3"> Nearly every day</label>
+    </p>
+    
+    <p>
+      4. Trouble relaxing.<br>
+      <label><input type="radio" name="q4" value="0"> Not at all</label><br>
+      <label><input type="radio" name="q4" value="1"> Several days</label><br>
+      <label><input type="radio" name="q4" value="2"> More than half the days</label><br>
+      <label><input type="radio" name="q4" value="3"> Nearly every day</label>
+    </p>
+    
+    <p>
+      5. Being so restless that it's hard to sit still.<br>
+      <label><input type="radio" name="q5" value="0"> Not at all</label><br>
+      <label><input type="radio" name="q5" value="1"> Several days</label><br>
+      <label><input type="radio" name="q5" value="2"> More than half the days</label><br>
+      <label><input type="radio" name="q5" value="3"> Nearly every day</label>
+    </p>
+    
+    <p>
+      6. Becoming easily annoyed or irritable.<br>
+      <label><input type="radio" name="q6" value="0"> Not at all</label><br>
+      <label><input type="radio" name="q6" value="1"> Several days</label><br>
+      <label><input type="radio" name="q6" value="2"> More than half the days</label><br>
+      <label><input type="radio" name="q6" value="3"> Nearly every day</label>
+    </p>
+    
+    <p>
+      7. Feeling afraid, as if something awful might happen.<br>
+      <label><input type="radio" name="q7" value="0"> Not at all</label><br>
+      <label><input type="radio" name="q7" value="1"> Several days</label><br>
+      <label><input type="radio" name="q7" value="2"> More than half the days</label><br>
+      <label><input type="radio" name="q7" value="3"> Nearly every day</label>
+    </p>
+    
+    <button type="button" onclick="calculateScore()">Calculate Total Score</button>
+</form>
+  <h2>Total Score: <span id="totalScore"></span></h2>
 
-          <div class="likert-item">
-            <p>Not being able to stop or control worrying</p>
-            <div class="likert-scale">
-              <label><input type="radio" name="q2" value="0"> Not at all</label>
-              <label><input type="radio" name="q2" value="1"> Several days</label>
-              <label><input type="radio" name="q2" value="2"> More than half the days</label>
-              <label><input type="radio" name="q2" value="3"> Nearly every day</label>
-            </div>
-          </div>
-
-          <div class="likert-item">
-            <p>Worrying too much about different things</p>
-            <div class="likert-scale">
-              <label><input type="radio" name="q3" value="0"> Not at all</label>
-              <label><input type="radio" name="q3" value="1"> Several days</label>
-              <label><input type="radio" name="q3" value="2"> More than half the days</label>
-              <label><input type="radio" name="q3" value="3"> Nearly every day</label>
-            </div>
-          </div>
-
-          <div class="likert-item">
-            <p>Trouble relaxing</p>
-            <div class="likert-scale">
-              <label><input type="radio" name="q4" value="0"> Not at all</label>
-              <label><input type="radio" name="q4" value="1"> Several days</label>
-              <label><input type="radio" name="q4" value="2"> More than half the days</label>
-              <label><input type="radio" name="q4" value="3"> Nearly every day</label>
-            </div>
-          </div>
-
-          <div class="likert-item">
-            <p>Being so restless that it's hard to sit still</p>
-            <div class="likert-scale">
-              <label><input type="radio" name="q5" value="0"> Not at all</label>
-              <label><input type="radio" name="q5" value="1"> Several days</label>
-              <label><input type="radio" name="q5" value="2"> More than half the days</label>
-              <label><input type="radio" name="q5" value="3"> Nearly every day</label>
-            </div>
-          </div>
-
-          <div class="likert-item">
-            <p>Becoming easily annoyed or irritable</p>
-            <div class="likert-scale">
-              <label><input type="radio" name="q6" value="0"> Not at all</label>
-              <label><input type="radio" name="q6" value="1"> Several days</label>
-              <label><input type="radio" name="q6" value="2"> More than half the days</label>
-              <label><input type="radio" name="q6" value="3"> Nearly every day</label>
-            </div>
-          </div>
-
-          <div class="likert-item">
-            <p>Feeling afraid as if something awful might happen</p>
-            <div class="likert-scale">
-              <label><input type="radio" name="q7" value="0"> Not at all</label>
-              <label><input type="radio" name="q7" value="1"> Several days</label>
-              <label><input type="radio" name="q7" value="2"> More than half the days</label>
-              <label><input type="radio" name="q7" value="3"> Nearly every day</label>
-            </div>
-          </div>
-
-          <input type="submit" value="Submit">
-        </form>
+         
       </div>
     </div>
-  </div></section>
+  </div>
+</section>
 
       <!-- Footer Start-->
     <footer class="footer bg-dark py-4 gradient-custom">
@@ -181,25 +170,32 @@
       <!-- Template Javascript -->
       <script src="../js/script.js"></script>
       <!-- Total Score Calculator -->
-       <script>
-    document.getElementById('likertForm').addEventListener('submit', function(event) {
-      event.preventDefault(); // Prevent form submission
+ <script>
+function calculateScore() {
+  // Get the form element
+  var form = document.getElementById("gadForm");
 
-      var form = event.target;
-      var elements = form.elements;
-      var totalScore = 0;
+  // Initialize total score
+  var totalScore = 0;
 
-      for (var i = 0; i < elements.length; i++) {
-        var element = elements[i];
-        if (element.type === 'radio' && element.checked) {
-          totalScore += parseInt(element.value);
-        }
-      }
+  // Loop through each question
+  for (var i = 1; i <= 7; i++) {
+    // Get the selected radio button value for the current question
+    var questionName = "q" + i;
+    var selectedValue = parseInt(form.elements[questionName].value);
 
-      // Display the total score
-      alert('Total Score: ' + totalScore);
-    });
-  </script>
+    // Add the selected value to the total score
+    totalScore += selectedValue;
+  }
+
+  // Display the total score
+  var totalScoreElement = document.getElementById("totalScore");
+  totalScoreElement.textContent = totalScore;
+}
+
+
+</script>
+
     </body>
 
     </html>
