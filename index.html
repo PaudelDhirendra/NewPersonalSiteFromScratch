@@ -30,8 +30,8 @@
     <body id="page-top">
 
       <!-- START OF NAVIGATION -->
-      <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark gradient-custom" id="navbar_id">
-        <div class="container-fluid ">
+      <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark gradient-custom" id="navbar_id" role="navigation">
+        <div class="container-fluid">
           <a class="navbar-brand d-flex logo" href="#page-top">
             <img src="assets/img/logo.png" alt="logo" id="logo" class="d-inline-block align-text-top">
             <span class='ml-3'>D Paudel<br>Psychiatrist</span>
@@ -40,41 +40,37 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse text-center justify-content-end" id="navbarSupportedContent">
-            <ul id="nav-list" class="navbar-nav ">
+            <ul id="nav-list" class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link" href="#about" aria-label="About">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#portfolio">Portfolio</a>
+                <a class="nav-link" href="#portfolio" aria-label="Portfolio">Portfolio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#services">Services</a>
+                <a class="nav-link" href="#services" aria-label="Services">Services</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Courses</a>
-              </li> 
+                <a class="nav-link" href="Resources.html" aria-label="Resources">Resources</a>
+              </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Tests</a>
-              </li> 
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-              </li>      
-            </ul>     
+                <a class="nav-link" href="#contact" aria-label="Contact">Contact</a>
+              </li>
+            </ul>
           </div>
         </div>
       </nav>
-
       <!-- END OF NAVIGATION -->
+
       <!-- Header -->
       <header class="slogan">
-        <div class="p-5 mb-4 rounded-3">
-          <div class="container-fluid py-5 text-center">
-            <h1 class="display-5 fw-bold">Give Yourself Time</h1>
-            <p class="mb-5">“Care for your psyche…know thyself, for once we know ourselves, we may learn how to care for ourselves.” —Socrates</p>
-          </div>
+        <div class="container-fluid py-5 text-center header-content">
+          <h1 class="display-5 fw-bold">Give Yourself Time</h1>
+          <p class="mb-5">“Care for your psyche…know thyself, for once we know ourselves, we may learn how to care for ourselves.” —Socrates</p>
         </div>
       </header>
-      <!-- End of Header-->
+      <!-- End of Header -->
+
 
       <!-- Section About Start -->
       <section class="page-section bg-light " id="about">
@@ -87,130 +83,185 @@
                 Dr. Dhirendra Paudel is a mental health professional and researcher based in Nepal. He received a bachelor’s degree in medicine from Tribhuvan University, Nepal, and a master’s degree in medicine with a specialization in psychiatry and mental health from Southern Medical University, Guangzhou, China. Dr. Paudel is certified by Nepal Medical Council and is licensed to practice psychiatry in Nepal. He offers consultancy services on Mental Health Gap Action Programme (mhGAP), Social and Emotional Learning (SEL), and author services for academic writing. He provides training on mhGAP and SEL for individuals in the field of mental health and has a research interest in psychotherapeutic interventions, psychopharmacology, and sleep medicine. Dr. Paudel takes a holistic approach to mental health treatment, considering cultural factors, alternative therapies, and the complex interplay between biological, psychological, and social factors. He has worked with diverse populations in various organizations, including the government, non-governmental organizations, and the private sector. Dr. Paudel is passionate about promoting mental health and improving the lives of those struggling with mental health problems.
               </p>
               <hr class="divider divider-dark">
-              <a class=" btn btn-dark " href="https://www.dhirendrapaudel.com.np" target="_blank">Curriculum Vitae</a>
+              <a class=" btn btn-success" href="https://www.dhirendrapaudel.com.np" target="_blank">Curriculum Vitae</a>
             </div>
           </div>
         </div>
       </section>
       <!-- Section About End-->
       <!-- Section Portfolio Start-->
-<section class="page-section bg-dark" id="portfolio">
-  <div class="container px-4 px-lg-5 text-center">
-    <h2 class="mt-0">Academic Portfolio</h2>
-    <a class="nav-link js-scroll-trigger" href="https://orcid.org/0000-0003-3619-9798" target="_blank">ORCID iD</a>
-    <a class="nav-link js-scroll-trigger" href="https://www.researchgate.net/profile/Dhirendra-Paudel-2" target="_blank">ResearchGate</a>
-    <a class="nav-link js-scroll-trigger" href="https://www.hamrodoctor.com/doctor/dr-dhirendra-paudel" target="_blank">HamroDoctor</a>
-    <a class="nav-link js-scroll-trigger" href="https://www.linkedin.com/in/PaudelDhirendra/" target="_blank">LinkedIn</a>
-    <a class="nav-link js-scroll-trigger" href="https://www.webofscience.com/wos/author/record/1027672" target="_blank">Web of Science ResearcherID</a>
-    <hr class="divider divider-light">
-    <h2 class="mt-0">UX/Literary Portfolio</h2>
-    <a class="nav-link js-scroll-trigger" href="https://www.smashwords.com/interview/madmedicos" target="_blank">Literature</a>
-    <a class="nav-link js-scroll-trigger" href="https://paudeldhirendra.github.io/" target="_blank">UX</a>
-  </div>
-</section>
+      <section class="page-section bg-dark" id="portfolio">
+        <div class="container px-4 px-lg-5 text-center">
+          <h2 class="mt-0">Portfolio</h2>
+          <div class="row">
+            <div class="col-lg-4 mt-4">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">ORCID iD</h4>
+                  <p class="card-text">Open Researcher and Contributor ID, a unique, persistent identifier of researcher</p>
+                  <div class="text-center">
+                    <a href="https://orcid.org/0000-0003-3619-9798" class="btn btn-success">Link</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 mt-4">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">ResearchGate</h4>
+                  <p class="card-text">A place to share work and connect with peers around the globe</p>
+                  <div class="text-center">
+                    <a href="https://www.researchgate.net/profile/Dhirendra-Paudel-2" class="btn btn-success">Link</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 mt-4">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Hamrodoctor</h4>
+                  <p class="card-text">Online Healthcare Service Provider from Nepal to consult with certified medical personnel</p>
+                  <div class="text-center">
+                    <a href="https://www.hamrodoctor.com/doctor/dr-dhirendra-paudel" class="btn btn-success">Link</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-lg-4 mt-4">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">mhGAP & SEL</h4>
+                  <p class="card-text">Mental Health Gap Action Program and Social and Emotional Learning Trainer</p>
+                  <div class="text-center">
+                    <a href="https://www.dhirendrapaudel.com.np/#awards" class="btn btn-success">Link</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 mt-4">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Indie Author</h4>
+                  <p class="card-text">An author of the published literary work, The Lost Years</p>
+                  <div class="text-center">
+                    <a href="https://www.smashwords.com/interview/madmedicos" class="btn btn-success">Link</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 mt-4">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">UX Design & Web Dev</h4>
+                  <p class="card-text">A portfolio with case studies of previous work on ux design and front end development</p>
+                  <div class="text-center">
+                    <a href="https://paudeldhirendra.github.io/" class="btn btn-success">Link</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
 
       <!-- Section Portfolio End-->
       <!-- Section Services Start-->
-<section class="page-section bg-light" id="services">
-  <div class="container px-4 px-lg-5">
-    <h2 class="text-center mt-0">At Your Service</h2>
-    <hr class="divider divider-dark">
-    <div class="row gx-4 gx-lg-5 justify-content-center">
-      <div class="col-lg-3 col-md-6 text-center">
-        <div class="mt-5">
-          <a class="service-link" href="https://mhy.org.np/" target="_blank">
-            <div class="mb-2">
-              <i class="bi-laptop fs-1"></i>
+      <section class="page-section" id="services">
+        <div class="container px-4 px-lg-5">
+          <h2 class="text-center mt-0">At Your Service</h2>
+          <hr class="divider divider-dark">
+          <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-3 col-md-6 text-center">
+              <div class="mt-5">
+                <div class="mb-2">
+                  <i class="bi-laptop fs-1 "></i>
+                </div>
+                <h3 class="h4 mb-2"><a class="nav-link js-scroll-trigger" href="https://www.kolabtree.com/find-an-expert/dhirendra-paudel" target="_blank">Evidence-based</a></h3>
+                <p class=" mb-0">Clinical practice on emerging therapies and programs that work for client’s individual needs.</p>
+              </div>
             </div>
-            <h3 class="h4 mb-2">Evidence-based</h3>
-          </a>
-          <p class="mb-0">Clinical practice on emerging therapies and programs that work for client’s individual needs.</p>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6 text-center">
-        <div class="mt-5">
-          <a class="service-link" href="https://mhy.org.np/" target="_blank">
-            <div class="mb-2">
-              <i class="bi-globe fs-1"></i>
+            <div class="col-lg-3 col-md-6 text-center">
+              <div class="mt-5">
+                <div class="mb-2">
+                  <i class="bi-globe fs-1 "></i>
+                </div>
+                <h3 class="h4 mb-2"><a class="nav-link js-scroll-trigger" href="https://www.kolabtree.com/find-an-expert/dhirendra-paudel" target="_blank">Telepsychiatry</a></h3>
+                <p class=" mb-0">Psychiatric evaluations, psychotherapy, patient education and medication management.</p>
+              </div>
             </div>
-            <h3 class="h4 mb-2">Telepsychiatry</h3>
-          </a>
-          <p class="mb-0">Psychiatric evaluations, psychotherapy, patient education and medication management.</p>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6 text-center">
-        <div class="mt-5">
-          <a class="service-link" href="https://www.kolabtree.com/find-an-expert/dhirendra-paudel" target="_blank">
-            <div class="mb-2">
-              <i class="bi-gem fs-1"></i>
+            <div class="col-lg-3 col-md-6 text-center">
+              <div class="mt-5">
+                <div class="mb-2">
+                  <i class="bi-gem fs-1 "></i>
+                </div>
+                <h3 class="h4 mb-2"><a class="nav-link js-scroll-trigger" href="https://www.kolabtree.com/find-an-expert/dhirendra-paudel" target="_blank">Freelance</a></h3>
+                <p class=" mb-0">Consultancy services to organizations for teaching, training, reporting, and policy writings.</p>
+              </div>
             </div>
-            <h3 class="h4 mb-2">Freelance</h3>
-          </a>
-          <p class="mb-0">Consultancy services to organizations for teaching, training, reporting, and policy writings.</p>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6 text-center">
-        <div class="mt-5">
-          <a class="service-link" href="https://www.kolabtree.com/find-an-expert/dhirendra-paudel" target="_blank">
-            <div class="mb-2">
-              <i class="bi-book fs-1"></i>
+            <div class="col-lg-3 col-md-6 text-center">
+              <div class="mt-5">
+                <div class="mb-2">
+                  <i class="bi-book fs-1 "></i>
+                </div>
+                <h3 class="h4 mb-2"><a class="nav-link js-scroll-trigger" href="https://www.kolabtree.com/find-an-expert/dhirendra-paudel" target="_blank">Author Services</a></h3>
+                <p class=" mb-0">On data mining/analysis, drafting, editing, proof-reading and polishing manuscripts.</p>
+              </div>
             </div>
-            <h3 class="h4 mb-2">Author Services</h3>
-          </a>
-          <p class="mb-0">On data mining/analysis, drafting, editing, proof-reading and polishing manuscripts.</p>
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
+      </section>
 
 
       <!-- Section Services End-->
 
       <!-- Section Contact Start-->
-<section class="page-section" id="contact">
-  <div class="container px-4 px-lg-5">
-    <div class="row gx-4 gx-lg-5 justify-content-center">
-      <div class="col-lg-8 col-xl-6 text-center">
-        <h2 class="mt-0">Let's Get In Touch!</h2>
-        <hr class="divider divider-light">
-        <p class="mb-5">Get help from a certified mental health professional, in person, over the phone, or online; a licensed psychiatrist in Nepal.</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-xl-8 offset-xl-2 py-4">
-      </div>
-      <div class="container px-4 px-lg-5">
-        <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
-          <div class="col-lg-6 text-center">
-            <a class="contact-link" href="mailto:dhirendra@doctor.com"><i class="bi-mailbox"></i> E-mail Dr. Dhirendra Paudel</a>
+      <section class="page-section" id="contact">
+        <div class="container px-4 px-lg-5">
+          <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-8 col-xl-6 text-center">
+              <h2 class="mt-0">Let's Get In Touch!</h2>
+              <hr class="divider divider-light">
+              <p class="mb-5">Get help from a certified mental health professional, in person, over the phone, or online; a licensed psychiatrist in Nepal.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xl-8 offset-xl-2 py-4">
+            </div>
+            <div class="container px-4 px-lg-5">
+              <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
+                <div class="col-lg-6 text-center">
+                  <a class="contact-link" href="mailto:dhirendra@doctor.com"><i class="bi-mailbox"></i> E-mail Dr. Dhirendra Paudel</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
+      </section>
 
       <!-- Section Contact End-->
       <!-- Footer Start-->
-    <footer class="footer bg-dark py-4 gradient-custom">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-lg-4 text-lg-start text-center">
-        <span class="text-color">Copyright 2014-2021</span> <a class="designer-link" href="https://www.paudeldhirendra.com.np" rel="designer">PaudelDhirendra</a>
-      </div>
-      <div class="col-lg-4 my-3 my-lg-0 text-center">
-        <a class="btn btn-transparent btn-social mx-2" href="https://twitter.com/PaudelDhirendra" target="_blank" alt="Twitter"><i class="bi-twitter"></i></a>
-        <a class="btn btn-transparent btn-social mx-2" href="https://www.linkedin.com/in/PaudelDhirendra/" target="_blank" alt="LinkedIn"><i class="bi-linkedin"></i></a>
-        <a class="btn btn-transparent btn-social mx-2" href="https://www.facebook.com/PaudelDhirendra" target="_blank" alt="Facebook"><i class="bi-facebook"></i></a>
-        <a class="btn btn-transparent btn-social mx-2" href="https://www.github.com/PaudelDhirendra" target="_blank" alt="GitHub"><i class="bi-github"></i></a>
-      </div>
-      <div class="col-lg-4 text-lg-end text-center">
-        <a class="designer-link me-3" href="https://www.privacypolicygenerator.info/live.php?token=KLOe7SbbKtaXmeRFhC4mfdtW0A9pgbcu" rel="designer" target="_blank">Privacy Policy</a>
-      </div>
-    </div>
-  </div>
-</footer>
+      <footer class="footer bg-dark py-4 gradient-custom">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-4 text-lg-start text-center">
+              <span class="text-color">Copyright 2014-2021</span> <a class="designer-link" href="https://www.paudeldhirendra.com.np" rel="designer">PaudelDhirendra</a>
+            </div>
+            <div class="col-lg-4 my-3 my-lg-0 text-center">
+              <a class="btn btn-transparent btn-social mx-2" href="https://twitter.com/PaudelDhirendra" target="_blank" alt="Twitter"><i class="bi-twitter"></i></a>
+              <a class="btn btn-transparent btn-social mx-2" href="https://www.linkedin.com/in/PaudelDhirendra/" target="_blank" alt="LinkedIn"><i class="bi-linkedin"></i></a>
+              <a class="btn btn-transparent btn-social mx-2" href="https://www.facebook.com/PaudelDhirendra" target="_blank" alt="Facebook"><i class="bi-facebook"></i></a>
+              <a class="btn btn-transparent btn-social mx-2" href="https://www.github.com/PaudelDhirendra" target="_blank" alt="GitHub"><i class="bi-github"></i></a>
+            </div>
+            <div class="col-lg-4 text-lg-end text-center">
+              <a class="designer-link me-3" href="https://www.privacypolicygenerator.info/live.php?token=KLOe7SbbKtaXmeRFhC4mfdtW0A9pgbcu" rel="designer" target="_blank">Privacy Policy</a>
+            </div>
+          </div>
+        </div>
+      </footer>
 
       <!-- Footer End-->
       <!-- JavaScript Libraries -->

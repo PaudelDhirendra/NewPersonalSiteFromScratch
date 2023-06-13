@@ -1,0 +1,264 @@
+
+/********** Root CSS **********/
+
+body {
+  font-family: 'EB Garamond', serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+/* Animation Background */
+
+/* Navbar and footer Gradient Color */
+.gradient-custom {
+    /* fallback for old browsers */
+    background: #007f5f;
+  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to left, rgba(0,127,95,1), rgba(191,210,0,1));
+  
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to left, rgba(0,127,95,1), rgba(191,210,0,1))
+  }
+
+/* Navigation */
+
+.navbar-brand span {
+  font-size: 1.25rem;
+  line-height: 1.2;
+  font-weight: 200;
+  display: inline-block;
+  padding: 10px 0 0 15px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.navbar-brand span:hover {
+  color: #000;
+}
+
+.navbar-brand img {
+  height: 64px;
+  margin-right: 2px;
+}
+
+#nav-list {
+  margin-top: 10px;
+}
+
+#nav-list a {
+  color: #fff;
+  text-align: center;
+}
+
+#nav-list a:hover {
+  color: yellow;
+}
+
+#logo {
+  vertical-align: middle;
+}
+
+.logo img {
+  transition: all 0.5s ease-in-out;
+}
+
+.logo:hover img {
+  transform: scale(1.2);
+}
+
+.navbar-nav {
+  text-transform: uppercase;
+}
+
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 0;
+  outline: none;
+  border-color: transparent;
+}
+
+/* Header two columns */
+
+.masthead {
+  background: linear-gradient(to right, rgba(0, 127, 95, 1), rgba(191, 210, 0, 1));
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.5px);
+  -webkit-backdrop-filter: blur(6.5px);
+  color: #fff;
+   margin-top: 20px; /* Add margin-top to create space */
+  padding: 20px; /* Add padding to create space */
+}
+
+.jumbotron-image {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+   margin-top: 20px; /* Add margin-top to create space */
+  padding: 20px; /* Add padding to create space */
+}
+
+.jumbotron-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Courses Section */
+
+
+.courses {
+  padding: 50px 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.course-item {
+  margin-bottom: 30px;
+}
+
+.course-content {
+  display: flex;
+  align-items: center;
+}
+
+.course-image {
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.course-details {
+  flex-grow: 1;
+}
+
+.course-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.course-description {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+
+/*Tests Section*/
+
+.tests {
+  padding: 50px 0;
+  background-color: #222;
+  color: #fff;
+}
+
+.test-item {
+  margin-bottom: 30px;
+  background-color: #333;
+  padding: 20px;
+}
+
+.test-image {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.test-details {
+  text-align: center;
+}
+
+.test-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.test-description {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+
+/*Skills Section */
+
+.skills {
+  padding: 50px 0;
+  background-color: #f9f9f9;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.skill-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.skill-content {
+  flex-grow: 1;
+}
+
+.skills-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.skills-description {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+
+
+/* Footer */
+
+footer.footer {
+  color: #fff;
+}
+
+footer.footer .text-color,
+footer.footer .designer-link {
+  color: #fff;
+}
+
+footer.footer a {
+  color: #fff;
+}
+
+footer.footer a:hover {
+  color: yellow;
+}
+
+footer.footer .designer-link:hover {
+  color: #000;
+}
+
+/*Tests Items*/
+.likert-item {
+  margin-bottom: 20px;
+}
+
+.likert-scale label {
+  margin-right: 10px;
+}

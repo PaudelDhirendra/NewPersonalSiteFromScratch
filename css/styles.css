@@ -1,27 +1,24 @@
-
 /********** Root CSS **********/
 
 body {
   font-family: 'EB Garamond', serif;
-  font-weight: 500;
-  font-size: 16px;
 }
 
 /* Animation Background */
 
 /* Navbar and footer Gradient Color */
 .gradient-custom {
-    /* fallback for old browsers */
-    background: #007f5f;
+  /* fallback for old browsers */
+  background: #1e7406;
   
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: -webkit-linear-gradient(to left, rgba(0,127,95,1), rgba(191,210,0,1));
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to left, rgba(30, 116, 6, 0.65), rgba(174,164,45,0.65));
   
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: linear-gradient(to left, rgba(0,127,95,1), rgba(191,210,0,1))
-  }
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to left, rgba(30,116,6,0.65), rgba(174,164,45,0.65));
+}
 
-/* Navigation */
+/** Navigation **/
 
 .navbar-brand span {
   font-size: 1.25rem;
@@ -39,6 +36,7 @@ body {
 
 .navbar-brand img {
   height: 64px;
+  float: left;
   margin-right: 2px;
 }
 
@@ -47,12 +45,12 @@ body {
 }
 
 #nav-list a {
-  color: #fff;
+  color: #F6B319;
   text-align: center;
 }
 
 #nav-list a:hover {
-  color: yellow;
+  color: #348E38;
 }
 
 #logo {
@@ -73,29 +71,23 @@ body {
 
 .navbar-toggler:focus {
   box-shadow: 0 0 0 0;
-  outline: none;
-  border-color: transparent;
+  color: #348E38;
+  border-color: #348E38;
 }
 
-/* Header with Glass Effects */
+/* Header */
 
 header.slogan {
-  padding: 5rem 0;
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 4.5rem);
+  background: radial-gradient(circle, rgba(52,142,56,1) 20%, rgba(246,179,25,1) 80%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
   height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(to right, rgba(0, 127, 95, 1), rgba(191, 210, 0, 1));
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(6.5px);
-  -webkit-backdrop-filter: blur(6.5px);
   color: #fff;
 }
-
-.header-content {
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-}
-
 
 /* Page Section */
 
@@ -104,36 +96,41 @@ header.slogan {
 }
 
 section#about {
-  color: #007f5f;
+  color: #348E38;
 }
 
+#about a.btn {
+  color: #fff;
+}
+
+#about a.btn:hover {
+  color: #F6B319;
+}
 
 section#portfolio {
-  color: #FFF;
+  color: #F6B319;
 }
 
+#portfolio a {
+  color: #F6B319;
+  text-decoration: none;
+}
+
+#portfolio a:hover {
+  color: #348E38;
+}
 
 section#services {
-  color: #007f5f;
-}
-section#services a.nav-link:hover {
-  color: #000000;
+  color: #348E38;
 }
 
-section#services i.bi-laptop {
-  color: #007f5f;
+.service-link {
+  color: #348E38;
+  text-decoration: none;
 }
 
-section#services i.bi-globe {
-  color: #007f5f;
-}
-
-section#services i.bi-gem {
-  color: #007f5f;
-}
-
-section#services i.bi-book {
-  color: #007f5f;
+.service-link:hover {
+  color: #F6B319;
 }
 
 section#contact {
@@ -141,41 +138,36 @@ section#contact {
   background-image: url("../assets/img/map-image.png");
   background-repeat: no-repeat;
   background-position: center;
-}
-
-section#contact h2,
-section#contact p,
-section#contact a {
-  color: #fff;
+  color: #F6B319;
 }
 
 .contact-link {
-  color: #fff;
+  color: #F6B319;
+  transition: color 0.3s;
 }
 
-section#contact a:hover {
-  color: #BFD200;
+.contact-link:hover {
+  color: #348E38;
 }
 
-/* Footer */
-
-footer.footer {
-  color: #fff;
+.footer .text-color {
+  color: #F6B319;
 }
 
-footer.footer .text-color,
-footer.footer .designer-link {
-  color: #fff;
+.footer a.designer-link {
+  color: #F6B319;
+  transition: color 0.3s;
 }
 
-footer.footer a {
-  color: #fff;
+.footer a.designer-link:hover {
+  color: #348E38;
 }
 
-footer.footer a:hover {
-  color: yellow;
+.footer a.btn-social i {
+  color: #F6B319;
+  transition: color 0.3s;
 }
 
-footer.footer .designer-link:hover {
-  color: #000;
+.footer a.btn-social:hover i {
+  color: #348E38;
 }
