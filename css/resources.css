@@ -20,7 +20,7 @@ body {
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background: linear-gradient(to left, rgba(0,127,95,1), rgba(191,210,0,1))
   }
-
+  
 /* Navigation */
 
 .navbar-brand span {
@@ -77,6 +77,16 @@ body {
   border-color: transparent;
 }
 
+/* Decrease text size when width reaches 468px */
+@media (max-width: 468px) {
+  .navbar-brand span {
+    font-size: 0.75rem;
+  }
+  .navbar-brand img {
+  height: 48px;
+  margin-right: 1px;
+}
+}
 /* Header two columns */
 
 .masthead {

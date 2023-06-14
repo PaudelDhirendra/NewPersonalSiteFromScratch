@@ -83,13 +83,24 @@ body {
 header.slogan {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to right, rgba(0, 127, 95, 1), rgba(191, 210, 0, 1));
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(6.5px);
   -webkit-backdrop-filter: blur(6.5px);
   color: #fff;
   height: 100vh;
-}
+/*    background-image: linear-gradient(45deg, #007f5f 0%, #80b918 35%, #bfd200 66%, #ffff3f 100%);*/
+
+/* background-color: #FFFFFF; */
+background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" viewBox="0 0 700 700" width="700" height="700" opacity="1"><defs><linearGradient gradientTransform="rotate(150, 0.5, 0.5)" x1="50%" y1="0%" x2="50%" y2="100%" id="ffflux-gradient"><stop stop-color="%23bfd200" stop-opacity="1" offset="0%"></stop><stop stop-color="%23007f5f" stop-opacity="1" offset="100%"></stop></linearGradient><filter id="ffflux-filter" x="-20%" y="-20%" width="140%" height="140%" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" color-interpolation-filters="sRGB"> <feTurbulence type="fractalNoise" baseFrequency="0.007 0.003" numOctaves="2" seed="2" stitchTiles="stitch" x="0%" y="0%" width="100%" height="100%" result="turbulence"></feTurbulence> <feGaussianBlur stdDeviation="0 0" x="0%" y="0%" width="100%" height="100%" in="turbulence" edgeMode="duplicate" result="blur"></feGaussianBlur> <feBlend mode="color-burn" x="0%" y="0%" width="100%" height="100%" in="SourceGraphic" in2="blur" result="blend"></feBlend> </filter></defs><rect width="700" height="700" fill="url(%23ffflux-gradient)" filter="url(%23ffflux-filter)"></rect></svg>');
+ background-attachment: scroll; 
+ background-size: cover; 
+ background-position: center; 
+ background-repeat: no-repeat; 
+ background-origin: border-box; 
+ background-clip: border-box; 
+ background-blend-mode:overlay; 
+  }
+
 header.slogan h1.display-5 {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
@@ -122,9 +133,19 @@ section#portfolio {
 }
 
 
-section#services {
-  color: #348E38;
+#services h3 a,
+#services p {
+  color: #007f5f;
 }
+
+#services h3 a:hover {
+  color: black;
+}
+
+#services i {
+  color: #007f5f;
+}
+
 
 section#contact {
   background-color: #212529;
