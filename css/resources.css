@@ -104,6 +104,11 @@ body {
   justify-content: center;
   align-items: center;
 }
+/*Page Section*/
+
+.page-section {
+  padding: 8rem 0;
+}
 
 /*Courses Section */
 
