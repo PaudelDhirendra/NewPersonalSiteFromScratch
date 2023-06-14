@@ -20,8 +20,8 @@ body {
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background: linear-gradient(to left, rgba(0,127,95,1), rgba(191,210,0,1))
   }
-
-/* Navigation */
+  
+/*Navigation*/
 
 .navbar-brand span {
   font-size: 1.25rem;
